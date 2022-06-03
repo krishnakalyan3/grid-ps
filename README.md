@@ -15,7 +15,7 @@ grid login --username YOUR_USER_NAME --key YOUR_API_KEY
 ```
 
 ### Grid Commands
-These commands below are replaced by the file main.py which will run locally.
+These commands below are replaced by the file `main.py` which will run locally.
 
 ```
 grid datastore create nija.csv --name ninja-turtles

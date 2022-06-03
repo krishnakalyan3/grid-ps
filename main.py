@@ -17,7 +17,7 @@ import time
 
 
 FILE_NAME = "ninja.csv"
-APP_NAME = "ninja2"
+APP_NAME = "ninja"
 APP_FILE = "app.py"
 DATASTORE_NAME = "ninja-turtles"
 
