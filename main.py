@@ -1,16 +1,5 @@
 #!/usr/bin/env python3
 
-# write dataframe as csv
-# subprocess.run("grid datastore create")  to create the datastore
-# subprocess.run("grid run")  to start the run
-# while not_completed: subprocess.run("grid status")  to wait for run to complete
-# subprocess.run("grid artifacts")  to download
-
-# grid datastore create nija.csv --name ninja-turtles
-# grid run --name ninja --dependency_file requirements.txt app.py --datastore_name ninja-turtles
-# grid status ninja
-# grid artifacts ninja
-
 import os
 import subprocess
 import time
