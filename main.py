@@ -33,12 +33,12 @@ def is_run_complete(app_name:str):
 
 
 # Check app.py locally to check if eveything works
-#cmd_1 = "app.py"
-#print(run_commands(cmd_1))
+cmd_1 = "app.py"
+print(run_commands(cmd_1))
 
 # Create a datastore
-#cmd_2 = "grid datastore create {} --name {}".format(FILE_NAME, DATASTORE_NAME)
-#print(run_commands(cmd_2))
+cmd_2 = "grid datastore create {} --name {}".format(FILE_NAME, DATASTORE_NAME)
+print(run_commands(cmd_2))
 
 # Run
 cmd_3 = "grid run --name {} --dependency_file " \
