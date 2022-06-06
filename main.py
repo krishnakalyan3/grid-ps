@@ -30,8 +30,8 @@ cmd_2 = "grid datastore create {} --name {}".format(FILE_NAME, DATASTORE_NAME)
 print(run_commands(cmd_2))
 
 # Run
-cmd_3 = "grid run --name {} --dependency_file " \
-        "requirements.txt --datastore_name {} {}".format(RUN_NAME, DATASTORE_NAME, APP_FILE)
+cmd_3 = "grid run {} --name {} --dependency_file " \
+        "requirements.txt --datastore_name {}".format(APP_FILE, RUN_NAME, DATASTORE_NAME)
 print(run_commands(cmd_3))
 
 # Download artifacts when ready

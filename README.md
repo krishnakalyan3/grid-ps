@@ -20,7 +20,7 @@ These commands below are replaced by the file `main.py` which will run locally.
 
 ```
 grid datastore create nija.csv --name ninja-turtles
-grid run --name ninja --dependency_file requirements.txt --datastore_name ninja-turtles app.py
+grid run app.py --name ninja --dependency_file requirements.txt --datastore_name ninja-turtles
 grid status ninja
 grid artifacts ninja
 ```
