@@ -9,7 +9,7 @@ import random
 FILE_NAME = "ninja.csv"
 RUN_NAME = "ninja{}".format(random.getrandbits(10))
 APP_FILE = "app.py"
-DATASTORE_NAME = "ninja-turtles"
+DATASTORE_NAME = "ninja-turtles-{}".format(random.getrandbits(10))
 
 
 def run_commands(cmd:str, timeout:int=120, max_term_cols:int=512):
@@ -21,6 +21,9 @@ def is_run_complete(run_name:str):
     args = "grid status {}".format(run_name)
     po = run_commands(args)
     return "succeeded" in po.split('\n')[-3]
+
+# Cleanup from previous runs
+print(run_commands("rm -rf grid_artifacts; rm -rf ninja.csv"))
 
 # Check app.py locally to check if eveything works
 print(run_commands("python {}".format(APP_FILE)))
