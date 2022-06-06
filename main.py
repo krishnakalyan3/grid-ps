@@ -3,10 +3,11 @@
 import os
 import subprocess
 import time
+import random
 
 
 FILE_NAME = "ninja.csv"
-RUN_NAME = "ninja"
+RUN_NAME = "ninja{}".format(random.getrandbits(10))
 APP_FILE = "app.py"
 DATASTORE_NAME = "ninja-turtles"
 

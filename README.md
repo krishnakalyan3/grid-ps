@@ -2,9 +2,10 @@
 ### Setup Instructions
 
 ```
+git clone https://github.com/krishnakalyan3/grid-ps
 conda create -n gridai python=3.8 -y
 conda activate gridai
-pip install -r requirements.txt
+cd grid-ps; pip install -r requirements.txt
 ```
 
 ### Login to Grid
