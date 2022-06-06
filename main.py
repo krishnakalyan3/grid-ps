@@ -6,10 +6,11 @@ import time
 import random
 
 
+RANDOM_BITS = random.getrandbits(10)
 FILE_NAME = "ninja.csv"
-RUN_NAME = "ninja{}".format(random.getrandbits(10))
+RUN_NAME = "ninja{}".format(RANDOM_BITS)
 APP_FILE = "app.py"
-DATASTORE_NAME = "ninja-turtles-{}".format(random.getrandbits(10))
+DATASTORE_NAME = "ninja-turtles-{}".format(RANDOM_BITS)
 
 
 def run_commands(cmd:str, timeout:int=120, max_term_cols:int=512):
