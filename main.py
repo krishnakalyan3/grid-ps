@@ -31,7 +31,7 @@ print(run_commands(cmd_2))
 
 # Run
 cmd_3 = "grid run --name {} --dependency_file " \
-        "requirements.txt {} --datastore_name {}".format(RUN_NAME, APP_FILE, DATASTORE_NAME)
+        "requirements.txt --datastore_name {} {}".format(RUN_NAME, DATASTORE_NAME, APP_FILE)
 print(run_commands(cmd_3))
 
 # Download artifacts when ready
